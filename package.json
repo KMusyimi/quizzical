@@ -2,7 +2,7 @@
   "name": "quizzical",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://KMusyimi.github.io/quizzical",
+  "homepage": "https://kmusyimi.github.io/quizzical",
   "type": "module",
   "scripts": {
     "dev": "vite",
