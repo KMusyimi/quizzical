@@ -1,0 +1,94 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+
+    color-scheme: light dark;
+    color: #F5F7FB;
+    background-color: #0B192C;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*::before, *::after, * {
+    box-sizing: inherit;
+    margin: unset;
+    padding: unset;
+}
+
+button {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#root {
+    position: fixed;
+    height: 100dvh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+}
+.btn {
+    background-color: #4E4B5C;
+    color: #F5F7FB;
+    border: none;
+    box-shadow: 0 0 4px #BDADEA;
+    border-radius: .95em;
+    padding: .75em 1em;
+    width: 193px;
+    transition: background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+}
+.btn:hover {
+    background-color: #68B684;
+    box-shadow: 0 0 4px #95E06C;
+
+}
+@media only screen and (min-width: 375px) {
+    .start-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .form {
+        overflow-y: scroll;
+        height: 85%;
+    }
+    .question {
+        width: 98%;
+        margin: 0 auto .9em auto;
+
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    .form{
+        overflow-y: hidden;
+        height: fit-content;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #293264;
+        background-color: #F5F7FB;
+    }
+}
