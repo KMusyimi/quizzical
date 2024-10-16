@@ -1,6 +1,8 @@
 import Button from "./Button";
-import {useState} from "react";
+import {createContext, useState} from "react";
 import Questions from "./Questions.jsx";
+
+const StartGameContext = createContext();
 
 function Main() {
 
@@ -23,11 +25,12 @@ function Main() {
     }
 
     return (
-        <>
+        <StartGameContext.Provider value={start}>
             {!start && startScreen()}
             {start && <Questions start={start}/>}
-        </>
+        </StartGameContext.Provider>
     )
 }
 
 export default Main;
+export {StartGameContext};
