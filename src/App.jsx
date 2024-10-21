@@ -11,7 +11,7 @@ function App() {
         <>
             <main id='content'>
                 <div className="circle top"></div>
-                {loading && <Spinner text='Loading...'/>}
+                {loading && <Spinner>Loading...</Spinner>}
                 {!loading && <Main/>}
                 <div className="circle bottom"></div>
             </main>
